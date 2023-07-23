@@ -1,15 +1,23 @@
 <template>
-  <div id="app" class="container">
-    <router-view></router-view>
+  <div id="app">
+    <NavBar />
+    <div id="app" class="container mt-4">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
+import NavBar from './components/NavBar';
+
 export default {
-  name: 'app',
-}
+  name: "app",
+  components: {
+    NavBar
+  }
+};
 </script>
 
 <style>
-  @import './assets/css/styles.css';
+@import "./assets/css/styles.css";
 </style>

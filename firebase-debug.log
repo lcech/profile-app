@@ -1,0 +1,32 @@
+[debug] [2021-05-17T12:13:09.097Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T12:13:09.098Z] Command:       /home/lcech/.nvm/versions/node/v12.18.3/bin/node /home/lcech/.nvm/versions/node/v12.18.3/bin/firebase serve
+[debug] [2021-05-17T12:13:09.098Z] CLI Version:   9.10.2
+[debug] [2021-05-17T12:13:09.098Z] Platform:      linux
+[debug] [2021-05-17T12:13:09.098Z] Node Version:  v12.18.3
+[debug] [2021-05-17T12:13:09.099Z] Time:          Mon May 17 2021 14:13:09 GMT+0200 (Central European Summer Time)
+[debug] [2021-05-17T12:13:09.099Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-17T12:13:09.105Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T12:13:09.105Z] > authorizing via signed-in user (lukas.cech@etnetera.cz)
+[debug] [2021-05-17T12:13:09.105Z] [iam] checking project profile-app-1bd1f for permissions ["firebase.projects.get"]
+[debug] [2021-05-17T12:13:09.107Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/profile-app-1bd1f:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-05-17T12:13:09.348Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 12:13:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=123","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T12:13:09.353Z] > refreshing access token with scopes: []
+[debug] [2021-05-17T12:13:09.353Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T12:13:09.469Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 17 May 2021 12:13:07 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T12:13:09.549Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f [none]
+[debug] [2021-05-17T12:13:09.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f 200
+[debug] [2021-05-17T12:13:09.825Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f {"projectId":"profile-app-1bd1f","projectNumber":"475934970613","displayName":"profile-app","name":"projects/profile-app-1bd1f","resources":{"hostingSite":"profile-app-1bd1f","storageBucket":"profile-app-1bd1f.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/mnt/d/devel/profile-app'...
+[info] 
+[debug] [2021-05-17T12:13:09.831Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/profile-app-1bd1f/sites 
+[debug] [2021-05-17T12:13:10.638Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/profile-app-1bd1f/sites 200
+[debug] [2021-05-17T12:13:10.638Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/profile-app-1bd1f/sites {"sites":[{"name":"projects/475934970613/sites/profile-app-1bd1f","defaultUrl":"https://profile-app-1bd1f.web.app","appId":"1:475934970613:web:090b4409181c41be8aebbc","type":"DEFAULT_SITE"}]}
+[debug] [2021-05-17T12:13:10.639Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f/webApps/1:475934970613:web:090b4409181c41be8aebbc/config [none]
+[debug] [2021-05-17T12:13:11.322Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f/webApps/1:475934970613:web:090b4409181c41be8aebbc/config 200
+[debug] [2021-05-17T12:13:11.323Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/profile-app-1bd1f/webApps/1:475934970613:web:090b4409181c41be8aebbc/config {"projectId":"profile-app-1bd1f","appId":"1:475934970613:web:090b4409181c41be8aebbc","storageBucket":"profile-app-1bd1f.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBJUPI3R9rEMng_g13s5DmMLw0lUdF5MTU","authDomain":"profile-app-1bd1f.firebaseapp.com","messagingSenderId":"475934970613","measurementId":"G-ZTP00V0ZPZ"}
+[info] i  hosting: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
